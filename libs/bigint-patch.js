@@ -5,7 +5,7 @@ var nativeBigInteger = null;
 // patches to bigint to use native node code if possible
 try {
   // if we can get node-bignum, we continue. If not, then fallback to use normal JS.
-  var bigint = require("bignum");
+  var bigint = require("bn.js");
   var crypto = require("crypto");
 
   // trying to mimick Tom Wu's constructor

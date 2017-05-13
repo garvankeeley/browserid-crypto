@@ -2,11 +2,12 @@
   "name": "browserid-crypto",
   "version": "0.8.0",
   "dependencies": {
+    "bn.js": "^4.11.6",
     "browserify": "13.1.0",
     "http-browserify": "1.7.0",
-    "vows-without-nsp-warnings": "0.10.0",
     "optimist": "0.6.1",
-    "uglify-js": "2.7.3"
+    "uglify-js": "2.7.3",
+    "vows-without-nsp-warnings": "0.10.0"
   },
   "devDependencies": {
     "jshint": "~2.9.3",
@@ -14,9 +15,6 @@
   },
   "engines": {
     "node": ">= 0.10"
-  },
-  "optionalDependencies": {
-    "bignum": "0.12.5"
   },
   "scripts": {
     "postinstall": "node ./scripts/bundle.js",
